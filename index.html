@@ -17,23 +17,21 @@
     <title>URL Shortener</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="container">
-          <div class="row">
-            <div class="col-2"><img src="images/img/logo.svg" /></div>
-            <div class="col-1"><a href="" class="features">Features</a></div>
-            <div class="col-1"><a href="">Pricing</a></div>
-            <div class="col-5"><a href="">Resources</a></div>
-            <div class="col-1"><a href="http://" class="login">Login</a></div>
-            <div class="col-2">
-              <button type="button" class="btn btn-primary signup">
-                Sign Up
-              </button>
-            </div>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-2"><img src="images/img/logo.svg" /></div>
+          <div class="col-1"><a href="" class="features">Features</a></div>
+          <div class="col-1"><a href="" class="pricing">Pricing</a></div>
+          <div class="col-5"><a href="" class="resources">Resources</a></div>
+          <div class="col-1"><a href="http://" class="login">Login</a></div>
+          <div class="col-2">
+            <button type="button" class="btn signup">Sign Up</button>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="body">
         <div class="overview">
           <h1>More than just shorter links</h1>
@@ -41,135 +39,158 @@
             Build your brand's recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button type="button" class="btn btn-primary getstarted">
-            Get Started
-          </button>
+          <button type="button" class="btn getstarted">Get Started</button>
         </div>
         <div class="pic">
           <img src="images/img/illustration-working.svg" />
         </div>
       </div>
+    </div>
 
+    <div class="secondhalf">
       <div class="shorteningarea">
         <div class="inputarea">
           <div class="inputtext">
-            <input type="text" placeholder="Shorten a link here" />
-            <button type="button" class="btn btn-primary shortenit">
+            <input
+              type="text"
+              placeholder="Shorten a link here..."
+              id="input"
+            />
+            <button type="button" class="btn shortenit" id="shorten">
               Shorten It!
             </button>
           </div>
-          <p>Add text</p>
+          <p>Please add a link</p>
         </div>
       </div>
 
-      <div class="linkarea">
-        <div class="results">
-          <p class="long">
-            https://
-            <span class="short">https://</span>
-            <span class="coy"
-              ><button type="button" class="btn btn-primary copy">
-                Copy
-              </button></span
-            >
-          </p>
-        </div>
-        <div class="results">
-          <p class="long">
-            https://
-            <span class="short">https://</span>
-            <span class="coy"
-              ><button type="button" class="btn btn-primary copy">
-                Copy
-              </button></span
-            >
-          </p>
-        </div>
-        <div class="results">
-          <p class="long">
-            https://
-            <span class="short">https://</span>
-            <span class="coy"
-              ><button type="button" class="btn btn-primary copy">
-                Copy
-              </button></span
-            >
-          </p>
-        </div>
-      </div>
+      <div class="greyarea">
+        <div class="container">
+          <div class="linkarea">
+            <div class="results">
+              <div class="row" id="row-one">
+                <div class="col-7 first">https://</div>
+                <div class="col-4 second">https://></div>
+                <div class="col-1">
+                  <button type="button" class="btn btn-primary copy">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <div class="additionalarea">
-        <h1>Advanced Statistics</h1>
-        <p>
-          Track how your links are performing across the web with our advanced
-          statistics dashboard.
-        </p>
-      </div>
+            <div class="results">
+              <div class="row" id="row-two">
+                <div class="col-7 first">https://</div>
+                <div class="col-4 second">https://></div>
+                <div class="col-1">
+                  <button type="button" class="btn btn-primary copy">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <div class="statistics">
-        <div class="boxone">
-          <h3>Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don't
-            mean a thing. Branded links help nstill confidence in your content.
-          </p>
-        </div>
-        <div class="boxtwo">
-          <h3>Detailed Records</h3>
-          <p>
-            Gain insight into who is clicking your links. Knowing when and where
-            people engage with your content helps inform better decisions.
-          </p>
-        </div>
-        <div class="boxthree">
-          <h3>Fully Customizable</h3>
-          <p>
-            Improve brand awareness and content discoverability through
-            customizable links, supercharging audience engagement.
-          </p>
+            <div class="results">
+              <div class="row" id="row-three">
+                <div class="col-7 first">https://</div>
+                <div class="col-4 second">https://></div>
+                <div class="col-1">
+                  <button type="button" class="btn btn-primary copy">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="additionalarea">
+            <h1>Advanced Statistics</h1>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+
+          <div class="statistics">
+            <div class="boxone">
+              <div class="brand">
+                <img src="images/img/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don't mean a thing. Branded links help instill confidence in
+                your content.
+              </p>
+            </div>
+            <div class="boxtwo">
+              <div class="brand">
+                <img src="images/img/icon-detailed-records.svg" alt="" />
+              </div>
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insight into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="boxthree">
+              <div class="brand">
+                <img src="images/img/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="footerone">
-        <h2>Boost your links today</h2>
-        <button type="button" class="btn btn-primary getstarted">
-          Get Started
-        </button>
+        <div class="container">
+          <h2>Boost your links today</h2>
+          <button type="button" class="btn getstarted">Get Started</button>
+        </div>
       </div>
 
       <div class="footertwo">
-        <div class="row">
-          <div class="col-3"><img src="images/img/logo.svg" alt="" /></div>
-          <div class="col-2">
-            <ul>
-              <li><b>Features</b></li>
-              <li>Link Shortening</li>
-              <li>Branded Links</li>
-              <li>Analytics</li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li><b>Resources</b></li>
-              <li>Blog</li>
-              <li>Developers</li>
-              <li>Support</li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li><b>Company</b></li>
-              <li>About</li>
-              <li>Our Team</li>
-              <li>Careers</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <img src="images/img/icon-facebook.svg" />
-            <img src="images/img/icon-twitter.svg" />
-            <img src="images/img/icon-pinterest.svg" />
-            <img src="images/img/icon-instagram.svg" />
+        <div class="container">
+          <div class="row">
+            <div class="col-4"><img src="images/img/logo.svg" alt="" /></div>
+            <div class="col-2">
+              <ul>
+                <li><b>Features</b></li>
+                <li>Link Shortening</li>
+                <li>Branded Links</li>
+                <li>Analytics</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li><b>Resources</b></li>
+                <li>Blog</li>
+                <li>Developers</li>
+                <li>Support</li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li><b>Company</b></li>
+                <li>About</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="col-2 icons">
+              <img src="images/img/icon-facebook.svg" />
+              <img src="images/img/icon-twitter.svg" />
+              <img src="images/img/icon-pinterest.svg" />
+              <img src="images/img/icon-instagram.svg" />
+            </div>
           </div>
         </div>
       </div>

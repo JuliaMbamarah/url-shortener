@@ -10,27 +10,37 @@
   --Very_Dark_Violet: hsl(260, 8%, 14%);
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.left {
-}
-
-.login {
+.login,
+.features,
+.pricing,
+.resources {
   text-decoration: none;
+  color: var(--Grayish_Violet);
+}
+
+.login:hover,
+.features:hover,
+.pricing:hover,
+.resources:hover {
+  color: black;
+}
+
+.header {
+  margin-top: 2rem;
 }
 
 .signup {
   border-radius: 20px;
   padding: 5px 15px 5px 15px;
-  margin-left: 1rem;
+  background-color: var(--Cyan);
+  border: 1px var(--Cyan) solid;
+  color: white;
 }
 
-.features {
-  margin-left: 2rem;
+.signup:hover {
+  background-color: rgba(42, 206, 206, 0.73);
+  border: rgba(42, 206, 206, 0.73);
+  color: white;
 }
 
 .body {
@@ -41,23 +51,207 @@
 .getstarted {
   border-radius: 20px;
   padding: 5px 15px 5px 15px;
-  margin-left: 1rem;
+  background-color: var(--Cyan);
+  border: 1px var(--Cyan) solid;
+  color: white;
+}
+
+.getstarted:hover {
+  background-color: rgba(42, 206, 206, 0.73);
+  border: rgba(42, 206, 206, 0.73);
+  color: white;
 }
 
 .inputarea {
   padding: 20px;
   border-radius: 8px;
-  background-color: blueviolet;
+  width: 82%;
+  margin: 0 auto;
+  background-image: url("../images/img/bg-shorten-desktop.svg");
+  background-color: var(--Dark_Violet);
 }
 
 .inputtext {
   text-align: center;
 }
 
+.shortenit {
+  padding: 5px 15px 5px 15px;
+  background-color: var(--Cyan);
+  border: 1px var(--Cyan) solid;
+  color: white;
+}
+
+.shortenit:hover {
+  background-color: rgba(42, 206, 206, 0.664);
+  border: rgba(42, 206, 206, 0.664);
+  color: white;
+}
+
+
+.greyarea .copy{
+  background-color: var(--Cyan);
+  border-color: var(--Cyan);
+}
+
+.greyarea .copy:hover{
+  background-color: rgba(42, 206, 206, 0.664);
+  border-color: rgba(42, 206, 206, 0.664);
+}
+
 input {
   width: 80%;
   margin-right: 2rem;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.secondhalf input::placeholder{
+  color: var(--Red);
+  padding: 15px;
+}
+
+.results {
+  border: 1px black solid;
+  border-radius: 4px;
+  padding: 0px 5px 0px 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: block;
+  align-items: center;
+  background-color: white;
+}
+
+.copy {
+  padding: 2px 15px 2px 15px;
+  margin: 2px 0px 2px 0px;
+}
+
+.inputarea p{
+  margin-bottom: 0;
+  color: var(--Red);
+  margin-left: 35px;
 }
 
 
 
+.greyarea {
+  background-color: var(--Gray);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.greyarea .row{
+  padding: 8px 15px 8px 15px;
+  font-weight: 600;
+}
+
+.greyarea .second{
+  color: var(--Cyan);
+}
+
+.inputarea {
+  margin-bottom: -70px;
+  position: relative;
+  z-index: 1;
+}
+
+.additionalarea {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.additionalarea p{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.statistics {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxone {
+  background-color: white;
+  padding: 30px;
+  width: 20rem;
+}
+
+.boxtwo {
+  background-color: white;
+  padding: 30px;
+  width: 20rem;
+  margin-top: 100px;
+}
+
+.boxthree {
+  background-color: white;
+  padding: 30px;
+  width: 20rem;
+  margin-top: 200px;
+}
+
+.boxone > .brand {
+  background-color: blueviolet;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: -70px;
+}
+
+.boxtwo > .brand {
+  background-color: blueviolet;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: -70px;
+}
+
+.boxthree > .brand {
+  background-color: blueviolet;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: -70px;
+}
+
+.footerone {
+  text-align: center;
+  padding: 50px;
+  background-color: var(--Dark_Violet);
+  background-image: url("../images/img/bg-boost-desktop.svg");
+}
+
+.footertwo {
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.footerone h2 {
+  color: white;
+}
+
+.footertwo {
+  color: var(--Gray);
+}
+
+.footertwo b {
+  color: white;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footertwo li{
+  list-style: none;
+  line-height: 1.7;
+}
+
+.icons img {
+  margin-right: 5px;
+  width: 20px;
+}
